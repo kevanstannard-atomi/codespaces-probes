@@ -8,6 +8,7 @@ REPO="kevanstannard-atomi/codespaces-probes"
 gh codespace create \
   --repo "$REPO" \
   --devcontainer-path .devcontainer/web-hello/devcontainer.json \
+  --machine basicLinux32gb \
   --display-name web-hello \
   --idle-timeout 30m \
   --retention-period 1h
