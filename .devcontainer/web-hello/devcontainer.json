@@ -1,0 +1,12 @@
+{
+  "name": "web-hello",
+  "image": "mcr.microsoft.com/devcontainers/python:3",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "web-hello",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "bash probes/web-hello/postCreate.sh"
+}
