@@ -4,7 +4,7 @@
 # Port 8080 is declared in devcontainer.json, so GitHub auto-forwards it.
 set -euo pipefail
 
-APP_DIR="$(cd "$(dirname "$0")/app" && pwd)"
+APP_DIR="$(cd "$(dirname "$0")" && pwd)/app"
 cd "$APP_DIR"
 
 # don't double-start

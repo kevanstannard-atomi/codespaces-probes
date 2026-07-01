@@ -5,7 +5,7 @@
 # proof that the devcontainer lifecycle ran in the cloud.
 set -euo pipefail
 
-APP_DIR="$(cd "$(dirname "$0")/app" && pwd)"
+APP_DIR="$(cd "$(dirname "$0")" && pwd)/app"
 mkdir -p "$APP_DIR"
 
 cat > "$APP_DIR/index.html" <<HTML
